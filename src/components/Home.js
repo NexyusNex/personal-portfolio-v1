@@ -9,6 +9,11 @@ export default function Home() {
         </h1>
         <p>A Frontend developer</p>
       </div>
+      <div className="scroll-box">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   );
 }
