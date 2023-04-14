@@ -10,3 +10,23 @@
   font-family: robotoMono, sans-serif;
   font-weight: 500;
 }
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(0, 84, 153);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 140, 255);
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(71, 172, 255);
+}
