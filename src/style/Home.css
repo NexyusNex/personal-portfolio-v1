@@ -1,3 +1,29 @@
+@keyframes textAnimate {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0px 0px 18px rgb(138, 202, 255);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes scrollAnimate {
+  0% {
+    transform: rotate(45deg) translate(-20px, -20px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(45deg) translate(20px, 20px);
+    opacity: 0;
+  }
+}
+
 .Home {
   height: 100svh;
   background-color: rgb(0, 19, 48);
@@ -25,35 +51,9 @@
   height: 100svh;
 }
 
-@keyframes textAnimate {
-  0% {
-    text-shadow: none;
-  }
-  50% {
-    text-shadow: 0px 0px 18px rgb(138, 202, 255);
-  }
-  100% {
-    text-shadow: none;
-  }
-}
-
 .home-content span {
   color: rgb(81, 177, 255);
   animation: textAnimate 2s infinite;
-}
-
-@keyframes scrollAnimate {
-  0% {
-    transform: rotate(45deg) translate(-20px, -20px);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(45deg) translate(20px, 20px);
-    opacity: 0;
-  }
 }
 
 .scroll-box {
