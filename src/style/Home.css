@@ -19,3 +19,41 @@
 .home-content span {
   color: rgb(81, 177, 255);
 }
+
+@keyframes scrollAnimate {
+  0% {
+    transform: rotate(45deg) translate(-20px, -20px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(45deg) translate(20px, 20px);
+    opacity: 0;
+  }
+}
+
+.scroll-box {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 40px;
+}
+
+.scroll-box span {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+  animation: scrollAnimate 2s infinite;
+}
+
+.scroll-box :nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.scroll-box :nth-child(3) {
+  animation-delay: -0.4s;
+}
