@@ -32,3 +32,21 @@
 .findme-links {
   margin-top: 50px;
 }
+
+.findme-link-svg {
+  margin-top: 50px;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  gap: 80px;
+}
+
+.findme-links svg {
+  height: 150px;
+  fill: #ffffff;
+  transition: all 300ms;
+}
+
+.findme-links svg:hover {
+  fill: #008cff;
+}
