@@ -16,8 +16,21 @@
   font-size: 32px;
 }
 
+@keyframes textAnimate {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0px 0px 18px rgb(138, 202, 255);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
 .home-content span {
   color: rgb(81, 177, 255);
+  animation: textAnimate 2s infinite;
 }
 
 @keyframes scrollAnimate {
