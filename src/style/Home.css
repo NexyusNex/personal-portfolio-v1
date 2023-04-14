@@ -5,15 +5,23 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .home-content {
   text-align: center;
   font-size: 32px;
+}
+
+#tsparticles {
+  position: absolute;
+  width: 100svw;
+  height: 100svh;
 }
 
 @keyframes textAnimate {
