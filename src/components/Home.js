@@ -23,6 +23,7 @@ export default function Home() {
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
+          fullScreen: { enable: false },
           fpsLimit: 60,
           particles: {
             number: {
@@ -107,7 +108,7 @@ export default function Home() {
                 height: 10,
               },
               position: {
-                x: 50,
+                x: 100,
                 y: 100,
               },
             },
