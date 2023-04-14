@@ -1,0 +1,34 @@
+.Aboutme {
+  height: auto;
+  background-color: #010834;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  padding-top: 40px;
+  gap: 32px;
+  padding-bottom: 200px;
+}
+
+.Aboutme h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.Aboutme h2 {
+  font-size: 42px;
+  color: #bad8ff;
+}
+
+.Aboutme img {
+  width: 200px;
+}
+
+.Aboutme p {
+  font-size: 22px;
+  padding: 0 20%;
+}
+
+.findme-links {
+  margin-top: 50px;
+}
