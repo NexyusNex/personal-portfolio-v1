@@ -1,8 +1,21 @@
 .Home {
   height: 100svh;
   background-color: rgb(0, 19, 48);
-  background-image: url("../Images/159Z_2107.w026.n002.628B.p1.628.jpg");
+  background-image: url("../Images/3415537.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content {
+  text-align: center;
+  font-size: 32px;
+}
+
+.home-content span {
+  color: rgb(81, 177, 255);
 }
