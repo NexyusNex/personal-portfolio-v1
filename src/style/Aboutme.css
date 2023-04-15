@@ -233,15 +233,18 @@
   fill: #bad8ff;
 }
 
-.project-buttons button:hover {
+.project-buttons button:hover,
+.project-buttons button:focus {
   color: #010834;
   background-color: #bad8ff;
   border: 2px solid #bad8ff;
   cursor: pointer;
   transform: scale(1.1);
+  outline: none;
 }
 
-.project-buttons button:hover svg {
+.project-buttons button:hover svg,
+.project-buttons button:focus svg {
   fill: #010834;
 }
 
