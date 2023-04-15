@@ -18,6 +18,14 @@
   border-radius: 8px;
   border: 2px solid #008cff;
   transition: all 500ms ease;
+  margin-bottom: 24px;
+}
+
+.projects-container .project:nth-child(even) {
+  grid-template-columns: 1fr 480px;
+}
+.projects-container .project:nth-child(even) .project-text {
+  grid-row-start: 1;
 }
 
 .project:hover {
@@ -118,6 +126,12 @@
     height: 80%;
     align-self: center;
   }
+  .projects-container .project:nth-child(even) {
+    grid-template-columns: 1fr 350px;
+  }
+  .projects-container .project:nth-child(even) .project-text {
+    grid-row-start: 1;
+  }
 }
 
 @media screen and (width<=1200px) {
@@ -139,6 +153,12 @@
   }
   .project-text {
     align-items: center;
+  }
+  .projects-container .project:nth-child(even) .project-text {
+    grid-row-start: 2;
+  }
+  .projects-container .project:nth-child(even) {
+    grid-template-columns: 1fr;
   }
 }
 
