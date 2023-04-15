@@ -1,0 +1,166 @@
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 10%;
+  gap: 24px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 480px 1fr;
+  width: 100%;
+  min-width: 400px;
+  height: 350px;
+  padding: 40px 20px;
+  gap: 2rem;
+  border-radius: 8px;
+  border: 2px solid #008cff;
+  transition: all 500ms ease;
+}
+
+.project:hover {
+  transform: translateY(-20px);
+  box-shadow: 15px 15px 12px #008cff;
+}
+
+.project h3 {
+  font-size: 32px;
+  border-bottom: 2px solid white;
+}
+
+.project video {
+  width: 100%;
+  height: 100%;
+  object-fit: initial;
+  border-radius: 8px;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.project p {
+  font-size: 18px;
+  padding: 0;
+  padding: 12px 0;
+}
+
+.project-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.project-buttons {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.project-buttons a {
+  text-decoration: none;
+}
+
+.project-buttons button {
+  display: flex;
+  align-items: center;
+  color: #bad8ff;
+  border: 2px solid #bad8ff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px 12px;
+  gap: 4px;
+  background-color: #010834;
+  border-radius: 8px;
+  transition: all 300ms ease;
+  height: 100%;
+}
+
+.project-buttons button svg {
+  width: 30px;
+  height: 30px;
+  fill: #bad8ff;
+}
+
+.project-buttons button:hover,
+.project-buttons button:focus {
+  color: #010834;
+  background-color: #bad8ff;
+  border: 2px solid #bad8ff;
+  cursor: pointer;
+  transform: scale(1.1);
+  outline: none;
+}
+
+.project-buttons button:hover svg,
+.project-buttons button:focus svg {
+  fill: #010834;
+}
+
+@media screen and (width<=1520px) {
+  .projects-container {
+    padding: 0 5%;
+  }
+  .project {
+    max-width: 1100px;
+  }
+}
+
+@media screen and (width<=1200px) {
+  .project {
+    grid-template-columns: 350px 1fr;
+    height: 350px;
+    padding: 20px 20px;
+  }
+  .project video {
+    height: 80%;
+    align-self: center;
+  }
+}
+
+@media screen and (width<=1200px) {
+  .projects-container {
+    padding: 0;
+  }
+  .project {
+    padding: 40px 20px;
+    grid-template-columns: 1fr;
+    height: auto;
+    width: clamp(250px, 90%, 500px);
+    min-width: 0;
+  }
+  .project video {
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    object-fit: contain;
+  }
+  .project-text {
+    align-items: center;
+  }
+}
+
+@media screen and (width<=420px) {
+  .projects-container {
+    padding: 0;
+  }
+  .project h3 {
+    font-size: 28px;
+  }
+  .project-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-buttons a {
+    height: 45px;
+    width: 100%;
+  }
+  .project-buttons button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
