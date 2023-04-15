@@ -118,7 +118,13 @@ export default function Aboutme() {
         <h1>Projects:</h1>
         <h1>...</h1>
         <div className="project">
-          <video loop muted autoPlay src={shopvideo}></video>
+          <video
+            loop
+            disablePictureInPicture
+            muted
+            autoPlay
+            src={shopvideo}
+          ></video>
           <div className="project-text">
             <h3>Shopping website</h3>
             <p>
