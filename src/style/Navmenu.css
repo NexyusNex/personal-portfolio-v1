@@ -24,11 +24,6 @@
   color: #72c0ff;
 }
 
-.Nav-menu p {
-  color: white;
-  font-size: 24px;
-}
-
 .hamburger-button {
   position: absolute;
   left: -80px;
@@ -49,4 +44,17 @@
 
 .hamburger-button svg {
   fill: white;
+}
+
+.nav-links button {
+  margin-bottom: 24px;
+  background: none;
+  color: white;
+  font-size: 24px;
+  border: none;
+  display: block;
+}
+
+.nav-links button:hover {
+  cursor: pointer;
 }
