@@ -153,6 +153,7 @@
   align-items: center;
   width: 100%;
   padding: 0 10%;
+  gap: 24px;
 }
 
 .project {
@@ -161,10 +162,16 @@
   width: 100%;
   min-width: 400px;
   height: 350px;
-  border: 2px solid #008cff;
   padding: 40px 20px;
   gap: 2rem;
   border-radius: 8px;
+  border: 2px solid #008cff;
+  transition: all 500ms ease;
+}
+
+.project:hover {
+  transform: translateY(-20px);
+  box-shadow: 15px 15px 12px #008cff;
 }
 
 .project h3 {
