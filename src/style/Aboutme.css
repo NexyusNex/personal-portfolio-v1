@@ -151,4 +151,39 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  padding: 0 10%;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 480px 1fr;
+  width: 100%;
+  min-width: 400px;
+  height: 350px;
+  border: 2px solid #008cff;
+  padding: 40px 20px;
+  gap: 2rem;
+}
+
+.project h3 {
+  font-size: 32px;
+  border-bottom: 2px solid white;
+}
+
+.project video {
+  width: 100%;
+  height: 100%;
+  object-fit: initial;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.project p {
+  font-size: 18px;
+  padding: 0;
+  padding-top: 12px;
 }
