@@ -265,7 +265,7 @@ export default function Projects() {
           </div>
         </div>
         <div className="project">
-          <img src={imageslider} alt="image slider"></img>
+          <img src={imageslider} alt="imgslider"></img>
           <div className="project-text">
             <h3>Image slider</h3>
             <p>
