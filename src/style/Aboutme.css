@@ -185,5 +185,48 @@
 .project p {
   font-size: 18px;
   padding: 0;
-  padding-top: 12px;
+  padding: 12px 0;
+}
+
+.project-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.project-buttons {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.project-buttons button {
+  display: flex;
+  align-items: center;
+  color: #bad8ff;
+  border: 2px solid #bad8ff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px 12px;
+  gap: 4px;
+  background-color: #010834;
+  border-radius: 8px;
+  transition: all 300ms ease;
+}
+
+.project-buttons button svg {
+  width: 30px;
+  height: 30px;
+  fill: #bad8ff;
+}
+
+.project-buttons button:hover {
+  color: #010834;
+  background-color: #bad8ff;
+  border: 2px solid #bad8ff;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.project-buttons button:hover svg {
+  fill: #010834;
 }
