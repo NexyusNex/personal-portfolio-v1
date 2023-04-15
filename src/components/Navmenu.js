@@ -23,6 +23,9 @@ export default function Navmenu() {
       </button>
       <h1>Nemanja Mitić</h1>
       <div className="nav-links">
+        <button data-link=".Home" onClick={handleClickScroll}>
+          Home
+        </button>
         <button data-link=".Aboutme" onClick={handleClickScroll}>
           About me
         </button>
