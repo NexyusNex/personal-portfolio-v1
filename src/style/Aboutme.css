@@ -244,3 +244,59 @@
 .project-buttons button:hover svg {
   fill: #010834;
 }
+
+@media screen and (width<=1200px) {
+  .project {
+    grid-template-columns: 350px 1fr;
+    height: 350px;
+    padding: 20px 20px;
+  }
+  .project video {
+    height: 80%;
+    align-self: center;
+  }
+}
+
+@media screen and (width<=1200px) {
+  .projects-container {
+    padding: 0;
+  }
+  .project {
+    grid-template-columns: 1fr;
+    height: auto;
+    width: clamp(250px, 90%, 500px);
+    min-width: 0;
+  }
+  .project video {
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    object-fit: contain;
+  }
+  .project-text {
+    align-items: center;
+  }
+}
+
+@media screen and (width<=420px) {
+  .projects-container {
+    padding: 0;
+  }
+  .project h3 {
+    font-size: 28px;
+  }
+  .project-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-buttons a {
+    height: 45px;
+    width: 100%;
+  }
+  .project-buttons button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
