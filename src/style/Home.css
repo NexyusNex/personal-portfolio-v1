@@ -34,6 +34,7 @@
   background-attachment: fixed;
   color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -78,4 +79,24 @@
 
 .scroll-box :nth-child(3) {
   animation-delay: -0.4s;
+}
+
+.work-button {
+  margin-top: 24px;
+  background: none;
+  font-size: 24px;
+  border: none;
+  color: rgb(81, 177, 255);
+  outline: 2px solid white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  z-index: 1;
+  transition: all 300ms ease;
+}
+
+.work-button:hover,
+.work-button:focus {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 12px white;
 }
