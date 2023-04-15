@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/personal-portfolio-v1/static/css/main.f1ceead4.css",
+    "main.css": "/personal-portfolio-v1/static/css/main.94bf3222.css",
     "main.js": "/personal-portfolio-v1/static/js/main.266d5e93.js",
     "static/media/3415537.jpg": "/personal-portfolio-v1/static/media/3415537.21387aab03bb556cc031.jpg",
     "static/media/weather.png": "/personal-portfolio-v1/static/media/weather.328e44590bf379cee5c8.png",
@@ -24,11 +24,11 @@
     "static/media/webpack-colored.svg": "/personal-portfolio-v1/static/media/webpack-colored.cf92f221fed7474aa201921161e6fde5.svg",
     "static/media/css3-colored.svg": "/personal-portfolio-v1/static/media/css3-colored.4f50b33af1d2115e9ee75ed4b1570e17.svg",
     "static/media/html5-colored.svg": "/personal-portfolio-v1/static/media/html5-colored.69274ea277b1ee86ba50abd24b291122.svg",
-    "main.f1ceead4.css.map": "/personal-portfolio-v1/static/css/main.f1ceead4.css.map",
+    "main.94bf3222.css.map": "/personal-portfolio-v1/static/css/main.94bf3222.css.map",
     "main.266d5e93.js.map": "/personal-portfolio-v1/static/js/main.266d5e93.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1ceead4.css",
+    "static/css/main.94bf3222.css",
     "static/js/main.266d5e93.js"
   ]
 }
