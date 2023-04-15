@@ -5,6 +5,14 @@ export default function Navmenu() {
     document.querySelector(".Nav-menu").classList.toggle("animate");
   }
 
+  const handleClickScroll = (e) => {
+    const link = e.target.getAttribute("data-link");
+    const element = document.querySelector(`${link}`);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="Nav-menu">
       <button className="hamburger-button" onClick={toggleMenu}>
@@ -14,11 +22,23 @@ export default function Navmenu() {
         </svg>
       </button>
       <h1>Nemanja Mitić</h1>
-      <p>About me</p>
-      <p>Experience</p>
-      <p>Interests</p>
-      <p>Projects</p>
-      <p>Source code</p>
+      <div className="nav-links">
+        <button data-link=".Aboutme" onClick={handleClickScroll}>
+          About me
+        </button>
+        <button data-link=".findme-links" onClick={handleClickScroll}>
+          Experience
+        </button>
+        <button data-link=".interests-container" onClick={handleClickScroll}>
+          Interests
+        </button>
+        <button data-link=".projects-container" onClick={handleClickScroll}>
+          Projects
+        </button>
+        <button data-link=".Aboutme" onClick={handleClickScroll}>
+          Source code
+        </button>
+      </div>
     </div>
   );
 }
