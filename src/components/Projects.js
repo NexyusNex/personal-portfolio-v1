@@ -4,16 +4,16 @@ import css from "../Images/devexp/css3-colored.svg";
 import html from "../Images/devexp/html5-colored.svg";
 import js from "../Images/devexp/javascript-colored.svg";
 import wp from "../Images/devexp/webpack-colored.svg";
-import shopvideo from "../videos/shopPC.mp4";
-import weathervideo from "../videos/weather.mp4";
-import cvvideo from "../videos/cv.mp4";
-import memoryvideo from "../videos/memory.mp4";
-import calculatorvideo from "../videos/calculator.mp4";
-import todovideo from "../videos/todo.mp4";
-import etchvideo from "../videos/etch.mp4";
-import giphyvideo from "../videos/giphy.mp4";
-import imageslidervideo from "../videos/imageslider.mp4";
-import tictactoevideo from "../videos/tictactoe.mp4";
+import calculator from "../Images/projects/calculator.png";
+import shop from "../Images/projects/clothesshop.png";
+import cv from "../Images/projects/cv.png";
+import etch from "../Images/projects/etch.png";
+import giphy from "../Images/projects/giphy.png";
+import imageslider from "../Images/projects/imageslider.png";
+import memorygame from "../Images/projects/memorygame.png";
+import tictactoe from "../Images/projects/tictactoe.png";
+import todo from "../Images/projects/todo.png";
+import weather from "../Images/projects/weather.png";
 
 export default function Projects() {
   return (
@@ -26,13 +26,7 @@ export default function Projects() {
           Github.
         </p>
         <div className="project">
-          <video
-            loop
-            disablePictureInPicture
-            muted
-            autoPlay
-            src={shopvideo}
-          ></video>
+          <img src={shop} alt="shop"></img>
           <div className="project-text">
             <h3>Shopping website</h3>
             <p>
@@ -65,13 +59,7 @@ export default function Projects() {
           </div>
         </div>
         <div className="project">
-          <video
-            loop
-            disablePictureInPicture
-            muted
-            autoPlay
-            src={weathervideo}
-          ></video>
+          <img src={weather} alt="weather"></img>
           <div className="project-text">
             <h3>Weather app</h3>
             <p>
@@ -101,13 +89,7 @@ export default function Projects() {
           </div>
         </div>
         <div className="project">
-          <video
-            loop
-            disablePictureInPicture
-            muted
-            autoPlay
-            src={memoryvideo}
-          ></video>
+          <img src={memorygame} alt="memory game"></img>
           <div className="project-text">
             <h3>Memory game</h3>
             <p>
@@ -139,13 +121,7 @@ export default function Projects() {
           </div>
         </div>
         <div className="project">
-          <video
-            loop
-            disablePictureInPicture
-            muted
-            autoPlay
-            src={cvvideo}
-          ></video>
+          <img src={cv} alt="cv"></img>
           <div className="project-text">
             <h3>CV editor</h3>
             <p>
@@ -176,13 +152,7 @@ export default function Projects() {
           </div>
         </div>
         <div className="project">
-          <video
-            loop
-            disablePictureInPicture
-            muted
-            autoPlay
-            src={calculatorvideo}
-          ></video>
+          <img src={calculator} alt="calculator"></img>
           <div className="project-text">
             <h3>Simple calculator</h3>
             <p>A functional calculator with keyboard button support.</p>
@@ -208,13 +178,7 @@ export default function Projects() {
           </div>
         </div>
         <div className="project">
-          <video
-            loop
-            disablePictureInPicture
-            muted
-            autoPlay
-            src={todovideo}
-          ></video>
+          <img src={todo} alt="to do"></img>
           <div className="project-text">
             <h3>To-do List</h3>
             <p>
@@ -246,13 +210,7 @@ export default function Projects() {
           </div>
         </div>
         <div className="project">
-          <video
-            loop
-            disablePictureInPicture
-            muted
-            autoPlay
-            src={etchvideo}
-          ></video>
+          <img src={etch} alt="etch a sketch"></img>
           <div className="project-text">
             <h3>Etch-a-Sketch</h3>
             <p>A grid drawing board you can set the size of.</p>
@@ -278,13 +236,7 @@ export default function Projects() {
           </div>
         </div>
         <div className="project">
-          <video
-            loop
-            disablePictureInPicture
-            muted
-            autoPlay
-            src={giphyvideo}
-          ></video>
+          <img src={giphy} alt="giphy"></img>
           <div className="project-text">
             <h3>Giphy search</h3>
             <p>
@@ -313,13 +265,7 @@ export default function Projects() {
           </div>
         </div>
         <div className="project">
-          <video
-            loop
-            disablePictureInPicture
-            muted
-            autoPlay
-            src={imageslidervideo}
-          ></video>
+          <img src={imageslider} alt="image slider"></img>
           <div className="project-text">
             <h3>Image slider</h3>
             <p>
@@ -348,13 +294,7 @@ export default function Projects() {
           </div>
         </div>
         <div className="project">
-          <video
-            loop
-            disablePictureInPicture
-            muted
-            autoPlay
-            src={tictactoevideo}
-          ></video>
+          <img src={tictactoe} alt="tic tac toe"></img>
           <div className="project-text">
             <h3>Tic Tac Toe</h3>
             <p>
