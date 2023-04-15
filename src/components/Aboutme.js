@@ -8,6 +8,7 @@ import js from "../Images/devexp/javascript-colored.svg";
 import sql from "../Images/devexp/mysql-colored.svg";
 import ps from "../Images/devexp/photoshop-colored.svg";
 import wp from "../Images/devexp/webpack-colored.svg";
+import shopvideo from "../videos/shopPC.mp4";
 
 export default function Aboutme() {
   return (
@@ -113,6 +114,18 @@ export default function Aboutme() {
       <div className="projects-container">
         <h1>Projects:</h1>
         <h1>...</h1>
+        <div className="project">
+          <video loop muted autoPlay src={shopvideo}></video>
+          <div className="project-text">
+            <h3>Shopping website</h3>
+            <p>
+              A fashion shopping website using firebase as a backend for
+              products. Features a shop page with categories, product display
+              page for all items, a cart with count and delete functions and
+              more.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
