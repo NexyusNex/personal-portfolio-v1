@@ -356,24 +356,21 @@ export default function Projects() {
             src={tictactoevideo}
           ></video>
           <div className="project-text">
-            <h3>To-do List</h3>
+            <h3>Tic Tac Toe</h3>
             <p>
-              A website where you can track your project list with it's tasks.
-              You can make new projects, delete them and do the same for tasks
-              with an added addition of edit.
+              The classic Tic Tac Toe game where you can choose the names of the
+              two players and play.
             </p>
             <div className="project-icons">
               <img src={html} alt="html"></img>
               <img src={css} alt="css"></img>
               <img src={js} alt="js"></img>
-              <img src={reacticon} alt="react"></img>
-              <img src={wp} alt="webpack"></img>
             </div>
             <div className="project-buttons">
-              <a href="https://nexyusnex.github.io/To-do-list/">
+              <a href="https://nexyusnex.github.io/Tic-Tac-Toe/">
                 <button>Visit Website</button>
               </a>
-              <a href="https://github.com/NexyusNex/To-do-list">
+              <a href="https://github.com/NexyusNex/Tic-Tac-Toe">
                 <button>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <title>github</title>
