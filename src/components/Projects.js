@@ -14,23 +14,8 @@ import memorygame from "../Images/projects/memorygame.png";
 import tictactoe from "../Images/projects/tictactoe.png";
 import todo from "../Images/projects/todo.png";
 import weather from "../Images/projects/weather.png";
-import { useEffect } from "react";
 
 export default function Projects() {
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        } else {
-          entry.target.classList.remove("show");
-        }
-      });
-    });
-    const hidden = document.querySelectorAll(".hidden");
-    hidden.forEach((el) => observer.observe(el));
-  }, []);
-
   return (
     <div className="projects-container">
       <div className="projects-container">
