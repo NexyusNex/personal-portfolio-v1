@@ -7,6 +7,28 @@
   gap: 24px;
 }
 
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .project {
   display: grid;
   grid-template-columns: 480px 1fr;
@@ -21,9 +43,18 @@
   margin-bottom: 24px;
 }
 
+.project.show {
+  animation: slideRight 600ms ease;
+}
+
+.projects-container .project:nth-child(even).show {
+  animation: slideLeft 600ms ease;
+}
+
 .projects-container .project:nth-child(even) {
   grid-template-columns: 1fr 480px;
 }
+
 .projects-container .project:nth-child(even) .project-text {
   grid-row-start: 1;
 }
