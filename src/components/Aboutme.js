@@ -8,6 +8,7 @@ import js from "../Images/devexp/javascript-colored.svg";
 import sql from "../Images/devexp/mysql-colored.svg";
 import ps from "../Images/devexp/photoshop-colored.svg";
 import wp from "../Images/devexp/webpack-colored.svg";
+import reacticon from "../Images/devexp/logo512.png";
 import shopvideo from "../videos/shopPC.mp4";
 
 export default function Aboutme() {
@@ -50,6 +51,7 @@ export default function Aboutme() {
           <img src={sql} alt="sql"></img>
           <img src={ps} alt="ps"></img>
           <img src={wp} alt="wp"></img>
+          <img src={reacticon} alt="react"></img>
         </div>
       </div>
       <div className="svg-top">
@@ -124,6 +126,12 @@ export default function Aboutme() {
               page for all items, a cart with count and delete functions and
               more.
             </p>
+            <div className="project-icons">
+              <img src={html} alt="html"></img>
+              <img src={css} alt="css"></img>
+              <img src={reacticon} alt="react"></img>
+              <img src={wp} alt="webpack"></img>
+            </div>
           </div>
         </div>
       </div>
