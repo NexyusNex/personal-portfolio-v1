@@ -45,6 +45,14 @@
   border-radius: 8px;
 }
 
+.project img {
+  border-radius: 8px;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
 .project-text {
   display: flex;
   flex-direction: column;
