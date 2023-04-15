@@ -13,6 +13,10 @@ export default function Navmenu() {
     }
   };
 
+  const toggleTheme = () => {
+    document.querySelector(".Aboutme").classList.toggle("light");
+  };
+
   return (
     <div className="Nav-menu">
       <button className="hamburger-button" onClick={toggleMenu}>
@@ -45,6 +49,7 @@ export default function Navmenu() {
           <button>Source code</button>
         </a>
       </div>
+      <button onClick={toggleTheme}>Light mode</button>
     </div>
   );
 }
