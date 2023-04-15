@@ -1,0 +1,62 @@
+.Footer {
+  display: flex;
+  height: 400px;
+  background-color: #008cff;
+  position: relative;
+}
+
+.Footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../Images/wave.png");
+  background-size: 1000px 100px;
+}
+
+.Footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+.Footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWaveReverse 4s linear infinite;
+}
+
+.Footer .wave#wave3 {
+  z-index: 998;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave 3s linear infinite;
+}
+
+.Footer .wave#wave4 {
+  z-index: 997;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWaveReverse 3s linear infinite;
+}
+
+@keyframes animateWave {
+  0% {
+    background-position: 1000px;
+  }
+  100% {
+    background-position: 0px;
+  }
+}
+
+@keyframes animateWaveReverse {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 1000px;
+  }
+}
