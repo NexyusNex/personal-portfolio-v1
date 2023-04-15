@@ -38,9 +38,12 @@ export default function Navmenu() {
         <button data-link=".projects-container" onClick={handleClickScroll}>
           Projects
         </button>
-        <button data-link=".Aboutme" onClick={handleClickScroll}>
-          Source code
-        </button>
+        <a
+          style={{ textDecoration: "none" }}
+          href="https://github.com/NexyusNex/personal-portfolio-v1"
+        >
+          <button>Source code</button>
+        </a>
       </div>
     </div>
   );
