@@ -63,3 +63,34 @@
   cursor: pointer;
   text-shadow: 0px 0px 12px #ffffff;
 }
+
+.theme-button {
+  width: 80px;
+  height: 30px;
+  border-radius: 28px;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  position: relative;
+  background-color: #72c0ff;
+}
+
+.theme-button.light {
+  background-color: white;
+}
+
+.theme-button::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 24px;
+  transition: all 500ms;
+}
+
+.theme-button.light::before {
+  background-color: #00041b;
+  transform: translateX(48px);
+}
