@@ -38,17 +38,9 @@
   border-bottom: 2px solid white;
 }
 
-.project video {
-  width: 100%;
-  height: 100%;
-  object-fit: initial;
-  border-radius: 8px;
-}
-
 .project img {
   border-radius: 8px;
   width: 100%;
-  object-fit: cover;
   height: 100%;
   overflow: hidden;
 }
@@ -130,10 +122,6 @@
     height: 350px;
     padding: 20px 20px;
   }
-  .project video {
-    height: 80%;
-    align-self: center;
-  }
   .projects-container .project:nth-child(even) {
     grid-template-columns: 1fr 350px;
   }
@@ -152,12 +140,6 @@
     height: auto;
     width: clamp(250px, 90%, 500px);
     min-width: 0;
-  }
-  .project video {
-    width: 100%;
-    height: auto;
-    justify-self: center;
-    object-fit: contain;
   }
   .project-text {
     align-items: center;
