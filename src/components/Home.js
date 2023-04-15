@@ -16,6 +16,13 @@ export default function Home() {
     await console.log(container);
   }, []);
 
+  const handleClickScroll = () => {
+    const element = document.querySelector(".projects-container");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="Home">
       <Particles
@@ -139,6 +146,9 @@ export default function Home() {
         </h1>
         <p>A Frontend developer</p>
       </div>
+      <button className="work-button" onClick={handleClickScroll}>
+        See my work
+      </button>
       <div className="scroll-box">
         <span></span>
         <span></span>
