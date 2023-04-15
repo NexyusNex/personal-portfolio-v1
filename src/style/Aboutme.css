@@ -9,9 +9,46 @@
   padding-bottom: 200px;
 }
 
-.Aboutme h1 {
+.Aboutme.light {
+  color: #010834;
+  background-color: #ecf5ff;
+}
+
+.Aboutme.light h2 {
+  color: #00368c;
+}
+
+.Aboutme.light .interests-container h2 {
+  color: #bad8ff;
+}
+
+.Aboutme.light .interests-container p {
+  color: white;
+}
+
+.Aboutme.light .findme-links svg {
+  fill: black;
+}
+
+.Aboutme.light .findme-links svg:hover {
+  fill: #008cff;
+}
+
+.Aboutme.light .Aboutme h1 {
   font-size: 48px;
   font-weight: bold;
+}
+
+.Aboutme.light .project {
+  border: 2px solid #0108348a;
+}
+
+.Aboutme.light .project:hover {
+  box-shadow: 15px 15px 12px #010834;
+}
+
+.Aboutme.light .project h3 {
+  border-bottom: 2px solid #010834;
 }
 
 .Aboutme h2 {
@@ -88,6 +125,14 @@
   padding: 50px 0;
   position: relative;
   background-color: #00368c;
+}
+
+.interests-container h2 {
+  color: #bad8ff;
+}
+
+.interests-container p {
+  color: white;
 }
 
 .custom-shape-divider-bottom-1681500362 {
