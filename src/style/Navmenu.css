@@ -37,7 +37,9 @@
   transition: all 300ms ease;
 }
 
-.hamburger-button:hover {
+.hamburger-button:hover,
+.hamburger-button:focus {
+  outline: none;
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -55,6 +57,9 @@
   display: block;
 }
 
-.nav-links button:hover {
+.nav-links button:hover,
+.nav-links button:focus {
+  outline: none;
   cursor: pointer;
+  text-shadow: 0px 0px 12px #ffffff;
 }
