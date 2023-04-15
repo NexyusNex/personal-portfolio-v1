@@ -10,15 +10,30 @@ import ps from "../Images/devexp/photoshop-colored.svg";
 import wp from "../Images/devexp/webpack-colored.svg";
 import reacticon from "../Images/devexp/logo512.png";
 import Projects from "./Projects";
+import { useEffect } from "react";
 
 export default function Aboutme() {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    });
+    const hidden = document.querySelectorAll(".hidden");
+    hidden.forEach((el) => observer.observe(el));
+  }, []);
+
   return (
     <div className="Aboutme">
       <div className="personal-info">
-        <h1>About me</h1>
+        <h1 className="hidden">About me</h1>
         <h1>...</h1>
         <img src={meImg} alt="me"></img>
-        <p>
+        <p className="hidden">
           I am a young fast learning and self motivated individual open to new
           experiences and I am always looking for self improvement. Passionate
           about everything that involves computers and programming and I
@@ -27,7 +42,7 @@ export default function Aboutme() {
       </div>
       <div className="findme-links">
         <h2>You can find me here:</h2>
-        <div className="findme-link-svg">
+        <div className="findme-link-svg hidden">
           <a href="https://github.com/NexyusNex">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <title>github</title>
@@ -41,7 +56,7 @@ export default function Aboutme() {
             </svg>
           </a>
         </div>
-        <div className="dev-experience">
+        <div className="dev-experience hidden">
           <h2>Development experience:</h2>
           <img src={cColored} alt="c"></img>
           <img src={cpp} alt="cpp"></img>
@@ -80,8 +95,8 @@ export default function Aboutme() {
         </div>
       </div>
       <div className="interests-container">
-        <h2>Interests:</h2>
-        <p>
+        <h2 className="hidden">Interests:</h2>
+        <p className="hidden">
           Ever since I was little I was always interested in technology,
           especially web development and design. I also really like games,
           movies and animated media. In my free time you can always catch me
