@@ -1,16 +1,20 @@
 {
   "files": {
     "main.css": "/personal-portfolio-v1/static/css/main.45e47bbf.css",
-    "main.js": "/personal-portfolio-v1/static/js/main.949726f1.js",
+    "main.js": "/personal-portfolio-v1/static/js/main.0eb940c7.js",
     "static/media/3415537.jpg": "/personal-portfolio-v1/static/media/3415537.21387aab03bb556cc031.jpg",
     "static/media/me.png": "/personal-portfolio-v1/static/media/me.20393ed040a34e5ef5fc.png",
     "static/media/weather.mp4": "/personal-portfolio-v1/static/media/weather.c1c8cdf545a6cc98995f.mp4",
+    "static/media/giphy.mp4": "/personal-portfolio-v1/static/media/giphy.141a30bf6d00bfb0cfba.mp4",
     "static/media/shopPC.mp4": "/personal-portfolio-v1/static/media/shopPC.bffc7a496bf8d306cb9f.mp4",
+    "static/media/imageslider.mp4": "/personal-portfolio-v1/static/media/imageslider.a4a2a27ddc5bd120ab1f.mp4",
     "static/media/memory.mp4": "/personal-portfolio-v1/static/media/memory.ccbfd98c6a83dcd0e794.mp4",
     "static/media/cv.mp4": "/personal-portfolio-v1/static/media/cv.f0b56a013398ff98d213.mp4",
     "static/media/todo.mp4": "/personal-portfolio-v1/static/media/todo.dac5143a01c712160a9d.mp4",
+    "static/media/tictactoe.mp4": "/personal-portfolio-v1/static/media/tictactoe.0ece0a2f043d76e10365.mp4",
     "static/media/OpenSans-Regular.ttf": "/personal-portfolio-v1/static/media/OpenSans-Regular.77c09223204154ae8d43.ttf",
     "static/media/calculator.mp4": "/personal-portfolio-v1/static/media/calculator.ede540d3be2d54b46014.mp4",
+    "static/media/etch.mp4": "/personal-portfolio-v1/static/media/etch.075bb43689bd84218962.mp4",
     "static/media/mysql-colored.svg": "/personal-portfolio-v1/static/media/mysql-colored.d5bba8da925b0b8e1f29f938f19c5aaa.svg",
     "static/media/photoshop-colored.svg": "/personal-portfolio-v1/static/media/photoshop-colored.1274ffaf1f86a470be0a35d3558f4a01.svg",
     "static/media/javascript-colored.svg": "/personal-portfolio-v1/static/media/javascript-colored.bacc3387f463f5b56f433827347c6155.svg",
@@ -21,10 +25,10 @@
     "static/media/css3-colored.svg": "/personal-portfolio-v1/static/media/css3-colored.4f50b33af1d2115e9ee75ed4b1570e17.svg",
     "static/media/html5-colored.svg": "/personal-portfolio-v1/static/media/html5-colored.69274ea277b1ee86ba50abd24b291122.svg",
     "main.45e47bbf.css.map": "/personal-portfolio-v1/static/css/main.45e47bbf.css.map",
-    "main.949726f1.js.map": "/personal-portfolio-v1/static/js/main.949726f1.js.map"
+    "main.0eb940c7.js.map": "/personal-portfolio-v1/static/js/main.0eb940c7.js.map"
   },
   "entrypoints": [
     "static/css/main.45e47bbf.css",
-    "static/js/main.949726f1.js"
+    "static/js/main.0eb940c7.js"
   ]
 }
