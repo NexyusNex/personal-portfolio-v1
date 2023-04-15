@@ -9,6 +9,7 @@
   box-sizing: border-box;
   font-family: robotoMono, sans-serif;
   font-weight: 500;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
