@@ -20,11 +20,9 @@
 
 @keyframes slideRight {
   0% {
-    opacity: 0;
     transform: translateX(-20%);
   }
   100% {
-    opacity: 1;
     transform: translateX(0);
   }
 }
@@ -46,12 +44,12 @@
 
 .project.show {
   animation: slideRight 600ms ease;
-  animation-fill-mode: forwards;
+  opacity: 1;
 }
 
 .projects-container .project:nth-child(even).show {
   animation: slideLeft 600ms ease;
-  animation-fill-mode: forwards;
+  opacity: 1;
 }
 
 .projects-container .project:nth-child(even) {
