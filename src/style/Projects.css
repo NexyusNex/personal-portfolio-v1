@@ -41,14 +41,17 @@
   border: 2px solid #008cff;
   transition: all 500ms ease;
   margin-bottom: 24px;
+  opacity: 0;
 }
 
 .project.show {
   animation: slideRight 600ms ease;
+  animation-fill-mode: forwards;
 }
 
 .projects-container .project:nth-child(even).show {
   animation: slideLeft 600ms ease;
+  animation-fill-mode: forwards;
 }
 
 .projects-container .project:nth-child(even) {
