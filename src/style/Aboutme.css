@@ -70,6 +70,11 @@
 
 .Aboutme .show {
   animation: slideDown 600ms ease;
+  animation-fill-mode: forwards;
+}
+
+.Aboutme .hidden {
+  opacity: 0;
 }
 
 .personal-info {
