@@ -14,8 +14,23 @@ import memorygame from "../Images/projects/memorygame.png";
 import tictactoe from "../Images/projects/tictactoe.png";
 import todo from "../Images/projects/todo.png";
 import weather from "../Images/projects/weather.png";
+import { useEffect } from "react";
 
 export default function Projects() {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    });
+    const hidden = document.querySelectorAll(".phidden");
+    hidden.forEach((el) => observer.observe(el));
+  }, []);
+
   return (
     <div className="projects-container">
       <div className="projects-container">
@@ -25,7 +40,7 @@ export default function Projects() {
           There are only some of my projects, you can view all of them on
           Github.
         </p>
-        <div className="project hidden">
+        <div className="project phidden">
           <img src={shop} alt="shop"></img>
           <div className="project-text">
             <h3>Shopping website</h3>
@@ -58,7 +73,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="project hidden">
+        <div className="project phidden">
           <img src={weather} alt="weather"></img>
           <div className="project-text">
             <h3>Weather app</h3>
@@ -88,7 +103,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="project hidden">
+        <div className="project phidden">
           <img src={memorygame} alt="memory game"></img>
           <div className="project-text">
             <h3>Memory game</h3>
@@ -120,7 +135,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="project hidden">
+        <div className="project phidden">
           <img src={cv} alt="cv"></img>
           <div className="project-text">
             <h3>CV editor</h3>
@@ -151,7 +166,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="project hidden">
+        <div className="project phidden">
           <img src={calculator} alt="calculator"></img>
           <div className="project-text">
             <h3>Simple calculator</h3>
@@ -177,7 +192,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="project hidden">
+        <div className="project phidden">
           <img src={todo} alt="to do"></img>
           <div className="project-text">
             <h3>To-do List</h3>
@@ -209,7 +224,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="project hidden">
+        <div className="project phidden">
           <img src={etch} alt="etch a sketch"></img>
           <div className="project-text">
             <h3>Etch-a-Sketch</h3>
@@ -235,7 +250,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="project hidden">
+        <div className="project phidden">
           <img src={giphy} alt="giphy"></img>
           <div className="project-text">
             <h3>Giphy search</h3>
@@ -264,7 +279,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="project hidden">
+        <div className="project phidden">
           <img src={imageslider} alt="imgslider"></img>
           <div className="project-text">
             <h3>Image slider</h3>
@@ -293,7 +308,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="project hidden">
+        <div className="project phidden">
           <img src={tictactoe} alt="tic tac toe"></img>
           <div className="project-text">
             <h3>Tic Tac Toe</h3>
