@@ -1,5 +1,5 @@
 import "../style/Aboutme.css";
-import meImg from "../Images/me.png";
+import meImg from "../Images/me.jpg";
 import cColored from "../Images/devexp/c-colored.svg";
 import cpp from "../Images/devexp/cplusplus-colored.svg";
 import css from "../Images/devexp/css3-colored.svg";
@@ -30,7 +30,7 @@ export default function Aboutme() {
       <div className="personal-info">
         <h1 className="hidden">About me</h1>
         <h1>...</h1>
-        <img src={meImg} alt="me"></img>
+        <img src={meImg} alt="me" style={{borderRadius: '100px'}}></img>
         <p className="hidden">
           I am a young fast learning and self motivated individual open to new
           experiences and I am always looking for self improvement. Passionate

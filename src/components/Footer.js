@@ -11,7 +11,7 @@ export default function Footer() {
       </div>
       <h1>Thanks for visiting!</h1>
       <p>Made by @NexyusNex on Github</p>
-      <p>Contact me at: mitic.nemanja2002@gmail.com</p>
+      <p>Contact me at: <a href="mailto:mitic.nemanja2002@gmail.com">mitic.nemanja2002@gmail.com</a></p>
       <div className="svg-footer">
         <a href="https://github.com/NexyusNex">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
